@@ -12,7 +12,7 @@
       width: 100%;
       height: 100%;
       background-color: #eee;
-      overflow: hidden; /* Kunci body, biarkan container yang mengatur layout */
+      overflow: hidden; /* Kunci body, biarkan iframe yang mengatur scroll */
     }
 
     .iframe-container {
@@ -23,9 +23,7 @@
       bottom: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden; 
-      /* Memberikan ruang ekstra di bawah agar tombol tidak "mepet" atau tertutup browser bar di HP */
-      padding-bottom: 80px; 
+      overflow: auto; /* Izinkan iframe untuk scroll jika kontennya panjang */
       box-sizing: border-box; /* Pastikan padding dihitung dalam tinggi elemen */
     }
 
